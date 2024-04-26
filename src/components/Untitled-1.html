@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>South Asia Explorer</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+margin: 0;
+padding: 0;
+}
+header {
+background-color: #333;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+}
+h1 {
+margin: 0;
+}
+nav {
+background-color: #444;
+padding: 10px 0;
+text-align: center;
+}
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+nav li {
+display: inline;
+margin-right: 20px;
+}
+nav a {
+text-decoration: none;
+color: #fff;
+font-size: 16px;
+}
+main {
+padding: 20px;
+}
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px 0;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+footer p {
+margin: 0;
+}
+.page-content {
+display: none;
+}
+.active {
+display: block;
+}
+.country {
+margin-bottom: 20px;
+padding: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.country img {
+width: 100px;
+height: auto;
+display: block;
+margin: 0 auto;
+}
+.country h2 {
+margin-top: 10px;
+text-align: center;
+}
+.country p {
+text-align: center;
+margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>South Asia Explorer</h1>
+</header>
+<nav>
+<ul>
+<li><a href="#"
+onclick="showPage('home')">Home</a></li>
+<li><a href="#"
+onclick="showPage('landing')">Landing</a></li>
+<li><a href="#" onclick="showPage('login')">Login</a></li>
+<li><a href="#"
+onclick="showPage('signup')">Signup</a></li>
+<li><a href="#"
+onclick="showPage('registration')">Registration</a></li>
+</ul>
+</nav>
+<main>
+<div id="home" class="page-content active">
+<h2>Welcome to South Asia Explorer!</h2>
+<p>Explore the beauty and diversity of South Asian
+countries.</p>
+</div>
+<div id="landing" class="page-content">
+<h2>Landing Page</h2>
+<p>This is the landing page of our website.</p>
+</div>
+<div id="login" class="page-content">
+<h2>Login</h2>
+<form>
+<label for="username">Username:</label><br>
+<input type="text" id="username" name="username"
+required><br>
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password"
+required><br>
+<button type="submit">Login</button>
+</form>
+</div>
+<div id="signup" class="page-content">
+<h2>Signup</h2>
+<form>
+<label for="newUsername">Username:</label><br>
+<input type="text" id="newUsername"
+name="newUsername" required><br>
+<label for="newPassword">Password:</label><br>
+<input type="password" id="newPassword"
+name="newPassword" required><br>
+<button type="submit">Signup</button>
+</form>
+</div>
+<div id="registration" class="page-content">
+<h2>Registration</h2>
+<form>
+<label for="fullName">Full Name:</label><br>
+<input type="text" id="fullName" name="fullName"
+required><br>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email"
+required><br>
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password"
+required><br>
+<button type="submit">Register</button>
+</form>
+</div>
+<div class="country">
+<img src="india-flag.png" alt="India Flag">
+<h2>India</h2>
+<p>Capital: New Delhi</p>
+<p>Leader: Narendra Modi</p>
+<p>Tourist Spots: Taj Mahal, Goa</p>
+</div>
+<div class="country">
+<img src="pakistan-flag.png" alt="Pakistan Flag">
+<h2>Pakistan</h2>
+<p>Capital: Islamabad</p>
+<p>Leader: Imran Khan</p>
+<p>Tourist Spots: Lahore Fort, Karachi Beach</p>
+</div>
+</main>
+<footer>
+<p>&copy; 2024 South Asia Explorer. All rights
+reserved.</p>
+</footer>
+<script>
+function showPage(pageId) {
+var pages =
+document.getElementsByClassName('page-content');
+for (var i = 0; i < pages.length; i++) {
+pages[i].style.display = 'none';
+}
+document.getElementById(pageId).style.display = 'block';
+}
+</script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>South Asia Explorer</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+}
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+main {
+    padding: 20px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+}
+.page-content {
+    display: none;
+}
+.active {
+    display: block;
+}
+.country {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.country img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.country h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+.country p {
+    text-align: center;
+    margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>South Asia Explorer</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#" onclick="showPage('home')">Home</a></li>
+        <li><a href="#" onclick="showPage('landing')">Landing</a></li>
+        <li><a href="#" onclick="showPage('login')">Login</a></li>
+        <li><a href="#" onclick="showPage('signup')">Signup</a></li>
+        <li><a href="#" onclick="showPage('registration')">Registration</a></li>
+    </ul>
+</nav>
+<main>
+    <div id="home" class="page-content active">
+        <h2>Welcome to South Asia Explorer!</h2>
+        <p>Explore the beauty and diversity of South Asian countries.</p>
+    </div>
+    <div id="landing" class="page-content">
+        <h2>Landing Page</h2>
+        <p>This is the landing page of our website.</p>
+    </div>
+    <div id="login" class="page-content">
+        <h2>Login</h2>
+        <form onsubmit="return validateForm('loginForm')">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div id="signup" class="page-content">
+        <h2>Signup</h2>
+        <form onsubmit="return validateForm('signupForm')">
+            <label for="newUsername">Username:</label><br>
+            <input type="text" id="newUsername" name="newUsername" required><br>
+            <label for="newPassword">Password:</label><br>
+            <input type="password" id="newPassword" name="newPassword" required><br>
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+    <div id="registration" class="page-content">
+        <h2>Registration</h2>
+        <form>
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div class="country">
+        <img src="india-flag.png" alt="India Flag">
+        <h2>India</h2>
+        <p>Capital: New Delhi</p>
+        <p>Leader: Narendra Modi</p>
+        <p>Tourist Spots: Taj Mahal, Goa</p>
+    </div>
+    <div class="country">
+        <img src="pakistan-flag.png" alt="Pakistan Flag">
+        <h2>Pakistan</h2>
+        <p>Capital: Islamabad</p>
+        <p>Leader: Imran Khan</p>
+        <p>Tourist Spots: Lahore Fort, Karachi Beach</p>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2024 South Asia Explorer. All rights reserved.</p>
+</footer>
+<script>
+function showPage(pageId) {
+    var pages = document.getElementsByClassName('page-content');
+    for (var i = 0; i < pages.length; i++) {
+        pages[i].style.display = 'none';
+    }
+    document.getElementById(pageId).style.display = 'block';
+}
+
+function validateUsername(username) {
+    var regex = /^[a-zA-Z0-9_]{3,16}$/;
+    return regex.test(username);
+}
+
+function validatePassword(password) {
+    var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{8,}$/;
+    return regex.test(password);
+}
+
+function validateForm(formId) {
+    var form = document.getElementById(formId);
+    var username = form.elements['username'].value;
+    var password = form.elements['password'].value;
+    
+    var valid = true;
+    if (!validateUsername(username)) {
+        alert('Invalid username. Username must contain only letters, numbers, or underscores and be between 3 to 16 characters long.');
+        valid = false;
+    }
+    if (!validatePassword(password)) {
+        alert('Invalid password. Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.');
+        valid = false;
+    }
+    return valid;
+}
+</script>
+</body>
+</html>
+
+
+const questions = [
+        {
+            question: "Which company introduced the first iPhone?",
+            options: ["Samsung", "Google", "Apple", "Microsoft"],
+            answer: "Apple"
+        },
+        {
+            question: "What does OLED stand for in smartphone displays?",
+            options: ["Organic Light Emitting Diode", "Onboard Light Emitting Display", "Over-Layered Emitting Diode", "Optimum Light Emitting Device"],
+            answer: "Organic Light Emitting Diode"
+        },
+        {
+            question: "Which wireless charging standard is commonly used by modern smartphones?",
+            options: ["USB-C", "NFC", "Qi", "Bluetooth"],
+            answer: "Qi"
+        },
+        {
+            question: "What is the maximum resolution of a 1080p smartphone display?",
+            options: ["720 x 1280", "1920 x 1080", "2560 x 1440", "3840 x 2160"],
+            answer: "1920 x 1080"
+        },
+        {
+            question: "Which smartphone feature allows for 3D face recognition?",
+            options: ["Retina Scan", "Iris Scan", "Touch ID", "Face ID"],
+            answer: "Face ID"
+        },
+        {
+            question: "What does IP68 rating on a smartphone signify?",
+            options: ["Battery life", "Processor speed", "Water and dust resistance", "Display brightness"],
+            answer: "Water and dust resistance"
+        },
+        {
+            question: "Which mobile operating system is developed by Google?",
+            options: ["iOS", "Windows Mobile", "Android", "BlackBerry OS"],
+            answer: "Android"
+        },
+        {
+            question: "What does NFC stand for in the context of smartphone technology?",
+            options: ["Near Field Camera", "Next-Gen Connectivity", "No Fuss Connection", "Near Field Communication"],
+            answer: "Near Field Communication"
+        },
+        {
+            question: "Which company is known for its Snapdragon series of mobile processors?",
+            options: ["Apple", "Qualcomm", "MediaTek", "Samsung"],
+            answer: "Qualcomm"
+        },
+        {
+            question: "Which smartphone feature allows for augmented reality experiences?",
+            options: ["Gyroscope", "Barometer", "Proximity sensor", "Accelerometer"],
+            answer: "Gyroscope"
+        }
+    ];

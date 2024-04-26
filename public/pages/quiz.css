@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+#quiz-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-title {
+    color: #007BFF; /* Blue title */
+}
+
+#question-container {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.option-input {
+    margin-right: 10px;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#next-btn {
+    background-color: #007BFF; /* Blue button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#next-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333; /* Black background */
+    color: #ccc; /* Light gray text */
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #ccc; /* Light gray text */
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo a:hover {
+    color: #fff; /* White text on hover */
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333; /* Black background */
+    color: #ccc; /* Light gray text */
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #ccc; /* Light gray text */
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo a:hover {
+    color: #fff; /* White text on hover */
+}

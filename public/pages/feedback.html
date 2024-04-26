@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span>
+                    <a href="/">Satvik Electronics</a>
+                </span>
+               
+            </div>
+        </div>
+    </header>
+
+<h1>Feedback Form</h1>
+
+
+<div id="feedback-form">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+    </div>
+    
+    <div>
+        <label for="contact-info">Contact Info:</label>
+        <input type="text" id="contact-info" required>
+    </div>
+
+    <div>
+        <label for="basic-info">Basic Info:</label>
+        <textarea id="basic-info" rows="4" required></textarea>
+    </div>
+
+    <div id="questions-container">
+        <!-- Feedback questions will be added here -->
+    </div>
+
+    <div>
+        <label for="additional-comments">Additional Comments:</label>
+        <textarea id="additional-comments" rows="4"></textarea>
+    </div>
+
+    <button id="submit-btn">Submit</button>
+</div>
+
+<script src="feedback.js"></script>
+
+</body>
+</html>

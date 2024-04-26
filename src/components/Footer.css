@@ -1,0 +1,33 @@
+/* Footer.css */
+
+/* Footer.css */
+
+.footer {
+  background-color: #343a40; /* Dark background color */
+  color: #fff; /* Text color */
+  padding: 30px 0; /* Padding */
+  position: absolute; /* Absolute positioning */
+  bottom: 0; /* Position at the bottom of the viewport */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Set a high z-index value */
+  height: 200px;
+}
+
+  
+  .footer h5 {
+    color: #fff; /* Header text color */
+    font-weight: bold; /* Header font weight */
+  }
+  
+  .footer p {
+    color: #ccc; /* Paragraph text color */
+  }
+  
+  .footer a {
+    color: #fff; /* Link text color */
+  }
+  
+  .footer a:hover {
+    color: #aaa; /* Link text color on hover */
+  }
+  

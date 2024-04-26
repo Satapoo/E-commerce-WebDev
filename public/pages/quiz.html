@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Tech Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span>
+                    <a href="/">Satvik Electronics</a>
+                </span>
+               
+            </div>
+        </div>
+    </header>
+
+<h1>Smartphone Tech Quiz</h1>
+
+<div id="quiz-container">
+    <div id="question-container">
+        <p id="question-text"></p>
+    </div>
+    
+    <div id="options-container">
+        <button class="option-btn" onclick="checkAnswer(this)"></button>
+        <button class="option-btn" onclick="checkAnswer(this)"></button>
+        <button class="option-btn" onclick="checkAnswer(this)"></button>
+        <button class="option-btn" onclick="checkAnswer(this)"></button>
+    </div>
+
+    <div id="feedback"></div>
+
+    <button id="next-btn" onclick="nextQuestion()">Next</button>
+
+    <div id="quiz-score" style="display:none;">
+        <h2>Quiz Score</h2>
+        <p id="score-text"></p>
+    </div>
+</div>
+
+<script>
+    const questions = [
+        {
+            question: "Which company introduced the first iPhone?",
+            options: ["Samsung", "Google", "Apple", "Microsoft"],
+            answer: "Apple"
+        },
+        {
+            question: "What does OLED stand for in smartphone displays?",
+            options: ["Organic Light Emitting Diode", "Onboard Light Emitting Display", "Over-Layered Emitting Diode", "Optimum Light Emitting Device"],
+            answer: "Organic Light Emitting Diode"
+        },
+        {
+            question: "Which wireless charging standard is commonly used by modern smartphones?",
+            options: ["USB-C", "NFC", "Qi", "Bluetooth"],
+            answer: "Qi"
+        },
+        {
+            question: "What is the maximum resolution of a 1080p smartphone display?",
+            options: ["720 x 1280", "1920 x 1080", "2560 x 1440", "3840 x 2160"],
+            answer: "1920 x 1080"
+        },
+        {
+            question: "Which smartphone feature allows for 3D face recognition?",
+            options: ["Retina Scan", "Iris Scan", "Touch ID", "Face ID"],
+            answer: "Face ID"
+        },
+        {
+            question: "What does IP68 rating on a smartphone signify?",
+            options: ["Battery life", "Processor speed", "Water and dust resistance", "Display brightness"],
+            answer: "Water and dust resistance"
+        },
+        {
+            question: "Which mobile operating system is developed by Google?",
+            options: ["iOS", "Windows Mobile", "Android", "BlackBerry OS"],
+            answer: "Android"
+        },
+        {
+            question: "What does NFC stand for in the context of smartphone technology?",
+            options: ["Near Field Camera", "Next-Gen Connectivity", "No Fuss Connection", "Near Field Communication"],
+            answer: "Near Field Communication"
+        },
+        {
+            question: "Which company is known for its Snapdragon series of mobile processors?",
+            options: ["Apple", "Qualcomm", "MediaTek", "Samsung"],
+            answer: "Qualcomm"
+        },
+        {
+            question: "Which smartphone feature allows for augmented reality experiences?",
+            options: ["Gyroscope", "Barometer", "Proximity sensor", "Accelerometer"],
+            answer: "Gyroscope"
+        }
+    ];
+
+
+    let currentQuestionIndex = 0;
+    let correctAnswers = 0;
+
+    function loadQuestion() {
+        const currentQuestion = questions[currentQuestionIndex];
+        document.getElementById("question-text").innerText = currentQuestion.question;
+
+        const optionButtons = document.querySelectorAll(".option-btn");
+        optionButtons.forEach((btn, index) => {
+            btn.innerText = currentQuestion.options[index];
+        });
+    }
+
+    function checkAnswer(btn) {
+        const selectedAnswer = btn.innerText;
+        const correctAnswer = questions[currentQuestionIndex].answer;
+
+        if (selectedAnswer === correctAnswer) {
+            document.getElementById("feedback").innerText = "Correct!";
+            correctAnswers++;
+        } else {
+            document.getElementById("feedback").innerText = "Wrong! Try again.";
+        }
+    }
+
+    function nextQuestion() {
+        currentQuestionIndex++;
+        
+        if (currentQuestionIndex < questions.length) {
+            loadQuestion();
+            document.getElementById("feedback").innerText = "";
+        } else {
+            document.getElementById("question-container").innerHTML = "<h2>Quiz completed!</h2>";
+            document.getElementById("options-container").innerHTML = "";
+            document.getElementById("next-btn").style.display = "none";
+
+            // Display quiz score
+            document.getElementById("quiz-score").style.display = "block";
+            document.getElementById("score-text").innerText = `You scored ${correctAnswers} out of ${questions.length}`;
+        }
+    }
+
+    // Load the first question
+    loadQuestion();
+</script>
+
+</body>
+</html>

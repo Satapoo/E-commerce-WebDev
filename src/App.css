@@ -1,0 +1,74 @@
+:root {
+ --mainBlue:#2a2a72;
+ --lightBlue:#009ffd;
+ --mainWhite:#f3f3f3;
+ --mainDark:#232528;
+ --mainYellow:#ffa400;
+}
+body{
+  font-family:"Anton", sans-serif !important;
+  background:var(--mainWhite) !important;
+  color:var(--mainDark) !important;
+}
+.text-title{
+  font-family: 'Anton', cursive;
+  letter-spacing:0.3rem;
+  text-transform: uppercase; 
+}
+.text-blue{
+  color:var(--mainBlue);
+}
+.text-bright{
+  color:var(--lightBlue);
+}
+.btn-black{
+  background:transparent;
+  text-transform:capitalize;
+  font-size:0.8rem !important;
+  color:var(--mainDark);
+  border-radius: 0 !important;
+  border:0.1rem solid var(--mainDark) !important;
+}
+.btn-black:hover{
+  background:var(--mainDark) !important;
+  color:var(--mainWhite) !important;
+}
+.cart-icon{
+  cursor:pointer;
+  font-size:1.2rem;
+  color:var(--mainYellow);
+}
+
+
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height to viewport height */
+  position: relative; /* Set body to relative position */
+}
+
+main {
+  flex-grow: 1; /* Expand to fill remaining vertical space */
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds viewport height */
+}
+
+/* Place footer at the bottom of the page */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+/* App.css */
+
+main {
+  margin-bottom: 1000px; /* Adjust margin bottom to accommodate footer */
+}
+

@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+h1 {
+    color: #007BFF; /* Blue title */
+}
+
+#feedback-form {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px;
+}
+
+select {
+    appearance: none; /* Remove default select arrow */
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='5' viewBox='0 0 10 5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 5 5-5H0z' fill='%23333'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px 5px;
+}
+
+button {
+    background-color: #007BFF; /* Blue button */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#questions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between questions */
+}
+
+#questions-container div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#additional-comments {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Back button */
+.back-btn {
+    background-color: #6c757d; /* Blue-gray */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.back-btn:hover {
+    background-color: #5a6268; /* Darker blue-gray on hover */
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333; /* Black background */
+    color: #ccc; /* Light gray text */
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #ccc; /* Light gray text */
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo a:hover {
+    color: #fff; /* White text on hover */
+}
